@@ -1,89 +1,398 @@
-* {
-    box-sizing: border-box;
+.container {
+  width: 1110px;
+  margin: auto;
 }
 
-body {
-    font-size: 20px;
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+button,
+input,
+select {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 img {
-    display: block;
+  display: block;
 }
 
-button {
-    padding: 0;
-    border: none;
-    background-color: #ffffff00;
+img,
+video {
+  height: auto;
+  max-width: 100%;
 }
 
-input {
-    border: none;
-    outline: none;
+iframe {
+  border: 0;
 }
 
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-Black.woff2") format("woff2"), url("../fonts/Mulish-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-Bold.woff2") format("woff2"), url("../fonts/Mulish-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/Mulish-ExtraBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-ExtraBold.woff2") format("woff2"), url("../fonts/Mulish-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-BlackItalic.woff2") format("woff2"), url("../fonts/Mulish-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-BoldItalic.woff2") format("woff2"), url("../fonts/Mulish-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-ExtraLight.woff2") format("woff2"), url("../fonts/Mulish-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-Regular.woff2") format("woff2"), url("../fonts/Mulish-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-SemiBoldItalic.woff2") format("woff2"), url("../fonts/Mulish-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-SemiBold.woff2") format("woff2"), url("../fonts/Mulish-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-LightItalic.woff2") format("woff2"), url("../fonts/Mulish-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-Italic.woff2") format("woff2"), url("../fonts/Mulish-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-Light.woff2") format("woff2"), url("../fonts/Mulish-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-Medium.woff2") format("woff2"), url("../fonts/Mulish-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-ExtraLightItalic.woff2") format("woff2"), url("../fonts/Mulish-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-MediumItalic.woff2") format("woff2"), url("../fonts/Mulish-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-SemiBold.woff2") format("woff2"), url("../fonts/Nunito-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-BoldItalic.woff2") format("woff2"), url("../fonts/Nunito-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-Medium.woff2") format("woff2"), url("../fonts/Nunito-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-LightItalic.woff2") format("woff2"), url("../fonts/Nunito-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-ExtraLight.woff2") format("woff2"), url("../fonts/Nunito-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-ExtraLightItalic.woff2") format("woff2"), url("../fonts/Nunito-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-Bold.woff2") format("woff2"), url("../fonts/Nunito-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-Black.woff2") format("woff2"), url("../fonts/Nunito-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-Italic.woff2") format("woff2"), url("../fonts/Nunito-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-ExtraBold.woff2") format("woff2"), url("../fonts/Nunito-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-Light.woff2") format("woff2"), url("../fonts/Nunito-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-Regular.woff2") format("woff2"), url("../fonts/Nunito-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-MediumItalic.woff2") format("woff2"), url("../fonts/Nunito-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-BlackItalic.woff2") format("woff2"), url("../fonts/Nunito-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/Nunito-ExtraBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-SemiBoldItalic.woff2") format("woff2"), url("../fonts/Nunito-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
 .header {
-    background-color: #fff;
-}
-
-.container {
-    max-width: 1110px;
-    margin: 0 auto;
+  background-color: #ffffff;
 }
 
 .header-wrapper {
-    background-color: #ffffff;
-    display: flex;
-    padding: 40px 0;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.logo-link__img {
+  height: 24px;
 }
 
 .search {
-    display: flex;
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .search__input {
-    background-color: #f0f8ff;
+  width: 80%;
+  display: flex;
+  border: 1px solid #EC1F46;
+  border-right: none;
+  font-family: "Mulish";
+  font-size: 12px;
+  outline: none;
+  padding: 4px 15px;
+  background-color: rgb(255, 255, 255);
 }
 
-.search__input:focus {
-    background-color: #e4f3ff;
-    border: #EC1F46 solid 1px;
+.search__button {
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .search__icon {
-    border-top-right-radius: 20px;
+  height: 40px;
+  width: 100%;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
 }
 
 .user-profile {
-    display: flex;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .user-profile__img {
-    padding-right: 18px;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .user-profile__name {
-    font-size: 14px;
+  padding-left: 15px;
+  font-family: "Mulish";
+  font-size: 14px;
 }
 
-/* Navigation menu */
-
 .nav {
-    background-color: #0A223D;
+  background-color: #0A223D;
 }
 
 .nav-menu {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav__link {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
-    padding: 30px 0px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 30px 40px;
+  font-family: "Mulish";
+  font-weight: 500;
+  font-size: 14px;
 }
+.nav__link:hover {
+  background-color: #EC1F46;
+  transition: 0.7s;
+}
+.nav__link:active {
+  background-color: #d11236;
+}/*# sourceMappingURL=style.css.map */

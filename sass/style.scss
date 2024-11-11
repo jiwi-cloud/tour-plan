@@ -1,0 +1,15 @@
+// Переменные проекта:
+$clr-pinky: #EC1F46;
+
+// Общие свойства проекта, ключевые блоки
+.container {
+    width: 1110px;
+    margin: auto;
+}
+
+// Импорт всех файлов scss
+@import "reset-styles";
+
+@import "fontstyles";
+
+@import "header";

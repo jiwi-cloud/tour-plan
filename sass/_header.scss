@@ -1,0 +1,101 @@
+.header {
+    background-color: #ffffff;
+}
+
+// container -общий класс, поместил его в общий style.scss 
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.logo-link__img {
+    height: 24px;
+}
+
+.search {
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.search__input {
+    width: 80%;
+    display: flex;
+    border: 1px solid $clr-pinky;
+    border-right: none;
+
+    font-family: "Mulish";
+    font-size: 12px;
+
+    outline: none;
+    padding: 4px 15px;
+    background-color: rgb(255, 255, 255);
+}
+
+.search__button {
+    background-color: #ffffff00;
+}
+
+.search__icon {
+    height: 40px;
+    width: 100%;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.user-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-profile__img {
+    width: fit-content;
+}
+
+.user-profile__name {
+    padding-left: 15px;
+    font-family: "Mulish";
+    font-size: 14px;
+}
+
+// Navigation menu 
+
+.nav {
+    background-color: #0A223D;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__link {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 30px 40px;
+
+    font: {
+        family: "Mulish";
+        weight: 500;
+        size: 14px;
+    }
+
+    &:hover {
+        background-color: $clr-pinky;
+        transition: 0.7s;
+    }
+
+    &:active {
+        background-color: darken($clr-pinky, 8%);
+    }
+}
