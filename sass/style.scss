@@ -1,15 +1,28 @@
 // Переменные проекта:
-$clr-pinky: #EC1F46;
+$clr-pinky: #ec1f46;
+$clr-dark-blue: #0a223d;
+$clr-grey: #f5fafe;
+$clr-text-black: #333;
 
 // Общие свойства проекта, ключевые блоки
+body {
+    background-color: $clr-grey;
+}
+
 .container {
     width: 1110px;
     margin: auto;
 }
 
 // Импорт всех файлов scss
-@import "reset-styles";
+@import "tech-files/reset-styles";
 
-@import "fontstyles";
+@import "tech-files/fontstyles";
 
-@import "header";
+@import "header/header";
+
+@import "main/hotel-info";
+@import "main/mail-subscribe";
+
+//Подключение медиа-запросов.
+@import "tech-files/media-queries";

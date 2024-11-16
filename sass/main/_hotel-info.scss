@@ -1,0 +1,145 @@
+.hotel {
+    padding: 23px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Mulish";
+    color: $clr-text-black;
+}
+
+.hotel-stars {
+    display: flex;
+
+    .stars {
+        padding-right: 2px;
+    }
+}
+
+.hotel-name-offer {
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+    .main-title {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .hotel-name {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .offer-icon {
+        margin-left: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: $clr-pinky;
+        border-radius: 4px;
+        padding: 4px 9px;
+
+        span {
+            color: white;
+            font-size: 10px;
+            font-weight: 600;
+        }
+    }
+}
+
+.hotel-services {
+    font-size: 12px;
+}
+
+.total-rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $clr-pinky;
+    color: #fff;
+
+    border-radius: 4px;
+    padding: 7px 8px;
+
+    &__text-title {
+        font-size: 8px;
+        font-weight: 600;
+        padding-bottom: 3px;
+    }
+
+    &__rating-indicator {
+        font-size: 14px;
+        font-weight: 700;
+    }
+}
+
+.hotel-overview {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Nunito";
+    padding-bottom: 70px;
+}
+
+.photo-slider {
+    border-radius: 30px;
+}
+.column-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hotel-overview__booking {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+
+    border-radius: 10px;
+    background-color: $clr-dark-blue;
+    color: #fff;
+    .discr-booking {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .price-block {
+            span {
+                display: block;
+            }
+        }
+        .parameters-block {
+            span {
+                display: block;
+            }
+        }
+        .minitext {
+            font-size: 12px;
+            &:first-of-type {
+                padding-bottom: 8px;
+            }
+        }
+        .price {
+            font-size: 24px;
+            font-weight: 900;
+        }
+    }
+    .discr-callhotel {
+        padding-top: 9px;
+        display: flex;
+        justify-content: space-between;
+        .callhotel {
+            display: block;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+    .full-options-button {
+        margin-top: 20px;
+        padding: 13px 0;
+        width: 100%;
+        background-color: $clr-pinky;
+        color: #fff;
+        border-radius: 4px;
+    }
+}

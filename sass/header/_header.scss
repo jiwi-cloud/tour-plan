@@ -64,6 +64,25 @@
     font-size: 14px;
 }
 
+//--burger-menu
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    background-color: $clr-dark-blue;
+    border: 1px solid #000;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+
+    &__line {
+        height: 2px;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+    }
+}
+
 // Navigation menu 
 
 .nav {
@@ -78,6 +97,7 @@
 .nav__link {
     display: flex;
     align-items: center;
+    text-align: center;
 
     text-decoration: none;
     color: #ffffff;
@@ -97,5 +117,45 @@
 
     &:active {
         background-color: darken($clr-pinky, 8%);
+    }
+}
+
+
+.breadcrumb {
+    background-color: darken($clr-grey, 5%);
+}
+
+.breadcrumb_navigantion {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    font-size: 15px;
+    padding: 20px 0;
+
+    li {
+        margin-right: 0.5rem;
+
+        &:last-child::after {
+            content: '';
+        }
+
+        &::after {
+            content: "/";
+            /* Символ или картинка для разделения */
+            margin-left: 0.5rem;
+            color: #6c757d;
+
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }

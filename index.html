@@ -18,7 +18,7 @@
                     <img class="logo-link__img" src="/img/logo-best-tour-plan.svg" alt="logotipe">
                 </a><!-- logo-link -->
                 <form class="search" action="\">
-                    <input placeholder="Найти тур..." class="search__input" type="text">
+                    <input class="search__input" placeholder="Найти тур..." type="text">
                     <button class="search__button">
                         <img class="search__icon" src="/img/find-button.png" alt="icon:search">
                     </button>
@@ -27,22 +27,120 @@
                     <img class="user-profile__img" src="img/avatar-profile.png" alt="image-profile">
                     <span class="user-profile__name">Дмитрий Долгополов</span>
                 </div> <!-- user-profile -->
+                <button class="hamburger-menu">
+                    <div class="hamburger-menu__line"></div>
+                    <div class="hamburger-menu__line"></div>
+                    <div class="hamburger-menu__line"></div>
+                </button>
             </div>
         </div> <!-- Container -->
+
+        <nav class="nav">
+            <div class="container">
+                <div class="nav-menu">
+                    <a href="#" class="nav__link">All Deals</a>
+                    <a href="#" class="nav__link">Hotels</a>
+                    <a href="#" class="nav__link">Activities</a>
+                    <a href="#" class="nav__link">Hotel Day Packages</a>
+                    <a href="#" class="nav__link">Restaurants</a>
+                    <a href="#" class="nav__link">Events</a>
+                    <a href="#" class="nav__link">Rodrigues</a>
+                </div><!-- nav-menu -->
+            </div><!-- Container-->
+        </nav><!-- NAV -->
+        <nav class="breadcrumb">
+            <div class="container">
+                <ol class="breadcrumb_navigantion">
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="/категория">Категория</a></li>
+                    <li><a href="/подкатегория">Подкатегория</a></li>
+                    <li>Текущая страница</li>
+                </ol>
+            </div>
+        </nav>
     </header> <!-- -----------------------------------------------HEADER -->
-    <nav class="nav">
-        <div class="container">
-            <div class="nav-menu">
-                <a href="#" class="nav__link">All Deals</a>
-                <a href="#" class="nav__link">Hotels</a>
-                <a href="#" class="nav__link">Activities</a>
-                <a href="#" class="nav__link">Hotel Day Packages</a>
-                <a href="#" class="nav__link">Restaurants</a>
-                <a href="#" class="nav__link">Events</a>
-                <a href="#" class="nav__link">Rodrigues</a>
-            </div><!-- nav-menu -->
-        </div><!--  container-->
-    </nav><!-- NAV -->
+
+    <main class="main">
+        <div class="hotel-info">
+            <div class="container">
+                <div class="hotel">
+                    <div class="brief-name">
+                        <div class="hotel-stars">
+                            <img class="stars" src="img/star.svg">
+                            <img class="stars" src="img/star.svg">
+                            <img class="stars" src="img/star.svg">
+                            <img class="stars" src="img/star.svg">
+                            <img class="stars" src="img/star.svg">
+                        </div>
+                        <div class="hotel-name-offer">
+                            <div class="hotel-name">
+                                <h1 class="main-title">GRAND HILTON HOTEL</h1>
+                            </div>
+                            <div class="offer-icon"><span>Flash Offer</span></div>
+                        </div>
+                        <div class="hotel-services">Half-Board/ All Inclusive + Complimentary Activities + Child
+                            Stays Free</div>
+                        <!-- /.hotel-services -->
+                    </div>
+                    <div class="total-rating">
+                        <span class="total-rating__text-title">User Rattings</span>
+                        <span class="total-rating__rating-indicator">4.5/<sub>5</sub></span>
+                    </div>
+                </div>
+
+                <div class="hotel-overview">
+                    <div class="hotel-overview__slider">
+                        <img class="photo-slider" src="/img/Slider.png" alt="slider-hotel">
+                    </div>
+
+                    <div class="column-box">
+                        <div class="hotel-overview__booking">
+                            <!-- Блок с описанием бронирования отеля \ 1 элемент колонны-->
+                            <div class="discr-booking">
+                                <div class="price-block">
+                                    <span class="minitext">price starts as</span>
+                                    <span class="price">$ 8,500</span>
+                                    <span class="minitext">per room / night</span>
+                                </div><!-- /.price-block -->
+                                <div class="parameters-block">
+                                    <span class="minitext">2 x Guests</span>
+                                    <span class="minitext">1 x Room</span>
+                                </div><!-- parameters-block -->
+                            </div><!-- discr-booking-->
+                            <div class="discr-callhotel">
+                                <span class="callhotel">Quick Booking</span>
+                                <span class="callhotel">12100</span>
+                            </div><!-- /.discr-callhotel -->
+                            <button class="full-options-button"><span>View Other Options</span></button>
+                        </div><!-- /.booking -->
+
+                        <!-- Мини-карта с локацией\ 2 элемент колонны -->
+                        <div class="hotel-overview__minimap">
+                            <img src="img/minimap.png" alt="map">
+                        </div><!-- /.minimap -->
+
+                    </div><!-- column-box -->
+                </div><!-- /.hotel-overview -->
+            </div><!-- /.container -->
+        </div>
+
+        <!-- Блок - Подписка на почтовые обновления и новости -->
+        <div class="mail-subscribe">
+            <img class="img-newsletter" src="/img/Newsletter.jpg" alt="Newsletter">
+            <div class="mail-subscribe__box">
+                <div class="title-for-subbox">
+                    <span class="subtitle-mail">subscribe to our</span>
+                    <h2 class="title-mail">Newsletter</h2>
+                </div>
+                <div class="input-mail">
+                    <input class="insert-mail" type="mail" placeholder="Your email address">
+                    <button class="submit-mail">Send</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
 </body>
 
 </html>
