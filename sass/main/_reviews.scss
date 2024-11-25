@@ -1,0 +1,121 @@
+.reviews {
+    margin: 0 auto;
+    padding-top: 40px;
+
+    background-color: $clr-grey;
+
+    font-family: "Mulish";
+
+    .reviews__title {
+        padding-bottom: 115px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 600;
+        font-size: 36px;
+    }
+
+
+    .reviews__text {
+        position: relative;
+        z-index: 1;
+        margin: 0 auto;
+        margin-bottom: 70px;
+        width: 730px;
+
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 136px 0px 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        // Стрелки слайдера 
+        .reviews__arrow {
+            //кнопка общий стиль
+            background-color: #ff767600;
+            transition: transform 0.3s ease;
+            /* Плавное изменение размера */
+            transform-origin: center;
+            /* Устанавливаем точку отсчета в центре стрелки */
+
+
+            &--left {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -80px;
+            }
+
+            &--right {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: -80px;
+            }
+
+            &:hover {
+                transform: scale(1.3) translateY(-50%);
+                /* Увеличиваем стрелку на 10% (приблизительно 5px) */
+            }
+        }
+
+        p {
+            width: 537px;
+            text-align: justify;
+        }
+
+        // Инфа профиля, который отправил отзыв
+        .reviews__profile-card {
+            margin: 0 auto;
+            width: 100px;
+            position: absolute;
+            top: -45px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+
+            .profile-card__avatar {
+                width: 100%;
+            }
+
+            .profile-card__username {
+                display: flex;
+                justify-content: center;
+                padding-top: 10px;
+
+                span {
+                    color: $clr-pinky;
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+            }
+
+            .profile-card__date {
+                display: flex;
+                justify-content: center;
+                padding-top: 10px;
+
+                span {
+                    font-size: 10px;
+                }
+            }
+
+            //
+            .profile-card__stars {
+                padding-top: 5px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+                .profile-card__star {
+                    margin-right: 2px;
+                    height: 10px;
+
+                    &:last-of-type {
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+}

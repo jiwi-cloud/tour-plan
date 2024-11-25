@@ -8,6 +8,10 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Слайдер -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -64,33 +68,54 @@
         <div class="hotel-info">
             <div class="container">
                 <div class="hotel">
+                    <div class="hotel-stars">
+                        <img class="stars" src="img/star.svg">
+                        <img class="stars" src="img/star.svg">
+                        <img class="stars" src="img/star.svg">
+                        <img class="stars" src="img/star.svg">
+                        <img class="stars" src="img/star.svg">
+                    </div>
                     <div class="brief-name">
-                        <div class="hotel-stars">
-                            <img class="stars" src="img/star.svg">
-                            <img class="stars" src="img/star.svg">
-                            <img class="stars" src="img/star.svg">
-                            <img class="stars" src="img/star.svg">
-                            <img class="stars" src="img/star.svg">
-                        </div>
                         <div class="hotel-name-offer">
                             <div class="hotel-name">
                                 <h1 class="main-title">GRAND HILTON HOTEL</h1>
                             </div>
                             <div class="offer-icon"><span>Flash Offer</span></div>
+                            <div class="total-rating">
+                                <span class="total-rating__text-title">User Rattings</span>
+                                <span class="total-rating__rating-indicator">4.5/<sub>5</sub></span>
+                            </div>
                         </div>
                         <div class="hotel-services">Half-Board/ All Inclusive + Complimentary Activities + Child
                             Stays Free</div>
                         <!-- /.hotel-services -->
                     </div>
-                    <div class="total-rating">
-                        <span class="total-rating__text-title">User Rattings</span>
-                        <span class="total-rating__rating-indicator">4.5/<sub>5</sub></span>
-                    </div>
                 </div>
 
                 <div class="hotel-overview">
-                    <div class="hotel-overview__slider">
-                        <img class="photo-slider" src="/img/Slider.png" alt="slider-hotel">
+                    <div class="hotel-overview__slider swiper">
+                        <div class="hotel-overview__box-slider swiper-wrapper">
+                            <div class="swiper-slide"><img class="photo-slider" src="/img/slide-hotel-1.png"
+                                    alt="slider-hotel"></div>
+                            <div class="swiper-slide"><img class="photo-slider" src="/img/slide-hotel-2.jpg"
+                                    alt="slider-hotel"></div>
+                            <div class="swiper-slide"><img class="photo-slider" src="/img/slide-hotel-3.jpg"
+                                    alt="slider-hotel"></div>
+                        </div>
+                        <!-- Кнопки управления -->
+                        <button class="leaf-slides swiper__button-left">
+                            <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M19.6339 6.61612C20.122 7.10427 20.122 7.89573 19.6339 8.38388L13.0178 15L19.6339 21.6161C20.122 22.1043 20.122 22.8957 19.6339 23.3839C19.1457 23.872 18.3543 23.872 17.8661 23.3839L10.3661 15.8839C9.87796 15.3957 9.87796 14.6043 10.3661 14.1161L17.8661 6.61612C18.3543 6.12796 19.1457 6.12796 19.6339 6.61612Z" />
+                            </svg>
+                        </button>
+                        <!-- Правая стрелка -->
+                        <button class="leaf-slides swiper__button-right">
+                            <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10.3661 6.61612C10.8543 6.12796 11.6457 6.12796 12.1339 6.61612L19.6339 14.1161C20.122 14.6043 20.122 15.3957 19.6339 15.8839L12.1339 23.3839C11.6457 23.872 10.8543 23.872 10.3661 23.3839C9.87796 22.8957 9.87796 22.1043 10.3661 21.6161L16.9822 15L10.3661 8.38388C9.87796 7.89573 9.87796 7.10427 10.3661 6.61612Z" />
+                            </svg>
+                        </button>
                     </div>
 
                     <div class="column-box">
@@ -116,7 +141,7 @@
 
                         <!-- Мини-карта с локацией\ 2 элемент колонны -->
                         <div class="hotel-overview__minimap">
-                            <img src="img/minimap.png" alt="map">
+                            <img class="minimap-image" src="img/minimap.png" alt="map">
                         </div><!-- /.minimap -->
 
                     </div><!-- column-box -->
@@ -139,8 +164,52 @@
             </div>
         </div>
         </div>
-    </main>
 
+        <!-- Блок Отзывы посетителей -->
+        <div class="reviews">
+            <div class="container">
+                <h2 class="reviews__title">What people think about us</h2>
+
+                <div class="reviews__text">
+                    <div class="reviews__profile-card">
+                        <div class="profile-card__image">
+                            <img class="profile-card__avatar" src="img/profile-card__image.png" alt="avatar">
+                        </div>
+                        <div class="profile-card__username"><span>Megan Kos</span></div>
+                        <div class="profile-card__date"><span>Stayed 18 Nov, 2019</span></div>
+                        <div class="profile-card__stars">
+                            <img class="profile-card__star" src="img/star.svg" alt="Star">
+                            <img class="profile-card__star" src="img/star.svg" alt="Star">
+                            <img class="profile-card__star" src="img/star.svg" alt="Star">
+                            <img class="profile-card__star" src="img/star.svg" alt="Star">
+                            <img class="profile-card__star" src="img/star.svg" alt="Star">
+                        </div>
+                    </div><!-- /.reviews__profile-card -->
+                    <p> It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us
+                        very well.
+                        Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities
+                        articles
+                        were in corner of gallery which were giving bad feeling. Breakfast was good and support of the
+                        staff
+                        was also very nice. Location is not good as per atmosphere, it is very nearby most of the
+                        popular places
+                        but self location in a narrow street is not good. Overall it was a good experience and could
+                        recommend.</p>
+
+                    <!-- Левая стрелка -->
+                    <button class="reviews__arrow reviews__arrow--left">
+                        <img src="img/chevron-left.svg" alt="Left Arrow">
+                    </button>
+                    <!-- Правая стрелка -->
+                    <button class="reviews__arrow reviews__arrow--right">
+                        <img src="img/chevron-right.svg" alt="Right Arrow">
+                    </button>
+                </div>
+            </div><!-- /.container -->
+        </div><!-- /.reviews -->
+
+    </main>
+    <script src="main.js"></script>
 </body>
 
 </html>

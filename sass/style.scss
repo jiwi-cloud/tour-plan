@@ -14,6 +14,8 @@ body {
     margin: auto;
 }
 
+
+@import "main/slider";
 // Импорт всех файлов scss
 @import "tech-files/reset-styles";
 
@@ -23,6 +25,7 @@ body {
 
 @import "main/hotel-info";
 @import "main/mail-subscribe";
+@import "main/reviews";
 
 //Подключение медиа-запросов.
 @import "tech-files/media-queries";
