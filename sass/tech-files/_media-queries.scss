@@ -40,7 +40,9 @@
     }
 
     .hotel-overview {
-        gap: 30px;
+        &__slider {
+            width: 100%;
+        }
 
         .price-block {
             .minitext {
@@ -71,9 +73,32 @@
         }
     }
 
-    .column-box {
+    .hotel-overview {
+        flex-direction: column;
         gap: 20px;
+
+        .column-box {
+            width: 100%;
+            justify-content: space-between;
+            flex-direction: row;
+            gap: 50px;
+
+            .hotel-overview__booking {
+                width: 50%;
+            }
+
+            .hotel-overview__minimap {
+                width: 50%;
+
+                .minimap-image {
+                    width: 100%;
+                }
+            }
+        }
     }
+
+    /* Reviews */
+
 
 }
 
@@ -88,8 +113,24 @@
         text-align: center;
     }
 
-    //Hotel-info Not
+    //Hotel-info 
+    .hotel-overview {
+        flex-direction: column;
+        gap: 20px;
 
+        .column-box {
+            flex-direction: row;
+            gap: 20px;
+
+            .hotel-overview__booking {
+                flex-basis: 50%;
+            }
+
+            .hotel-overview__minimap {
+                flex-basis: 50%;
+            }
+        }
+    }
 }
 
 
@@ -153,9 +194,11 @@
     //Hotel-info
     .hotel-overview {
         flex-direction: column;
+        gap: 20px;
 
         .column-box {
             flex-direction: row;
+            gap: 20px;
 
             .hotel-overview__booking {
                 flex-basis: 50%;
@@ -165,6 +208,24 @@
                 flex-basis: 50%;
             }
         }
+    }
+
+    /* Reviews */
+    .reviews {
+        .reviews__title {
+            padding-bottom: 80px;
+            font-size: 30px;
+        }
+
+        .reviews__text {
+            width: 100%;
+
+            p {
+                width: 80%;
+                text-align: justify;
+            }
+        }
+
     }
 }
 
@@ -192,16 +253,18 @@
     .hotel-overview {
         flex-direction: column;
         gap: 20px;
+        box-sizing: border-box;
+
 
         .column-box {
             flex-direction: column;
 
             .hotel-overview__booking {
-                flex-basis: 50%;
+                width: 100%;
             }
 
             .hotel-overview__minimap {
-                flex-basis: 50%;
+                width: 100%;
             }
         }
     }
@@ -314,6 +377,4 @@
             text-align: center;
         }
     }
-
-
 }
