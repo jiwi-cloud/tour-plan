@@ -29,7 +29,7 @@
                 </form> <!-- search -->
                 <div class="user-profile">
                     <img class="user-profile__img" src="img/avatar-profile.png" alt="image-profile">
-                    <span class="user-profile__name">Дмитрий Долгополов</span>
+                    <span class="user-profile__name">Дмитрий Ворон</span>
                 </div> <!-- user-profile -->
                 <button class="hamburger-menu">
                     <div class="hamburger-menu__line"></div>
@@ -165,7 +165,6 @@
                 </div>
             </div>
         </div>
-        </div>
 
         <!-- Блок Отзывы посетителей -->
         <div class="reviews">
@@ -173,6 +172,7 @@
                 <h2 class="reviews__title">What people think about us</h2>
 
                 <div class="fake-shell">
+                    <!-- это контейнер пустышка, просто для позиционирования кнопок, так как swiper hidden не позволяет сделать вне контейнера -->
 
                     <div class="reviews-swipercontainer swiper ">
                         <div class="reviews-wrappercontainer swiper-wrapper">
@@ -298,22 +298,142 @@
                             </div><!-- reviews__slider -->
                         </div> <!-- swiper-wrapper -->
                     </div> <!-- swiper -->
-
-
                     <button class="reviews__arrow reviews__arrow--left">
                         <img src="img/chevron-left.svg" alt="Left Arrow">
-                    </button><!-- Правая стрелка -->
-
+                    </button><!-- Левая стрелка -->
                     <button class="reviews__arrow reviews__arrow--right">
                         <img src="img/chevron-right.svg" alt="Right Arrow">
-                    </button><!-- Левая стрелка -->
-
-                </div><!-- /.fake-shell -->
-
+                    </button><!-- Правая стрелка -->
+                </div><!-- /.fake-shell (for correct position button) -->
             </div><!-- /.container -->
         </div><!-- /.reviews -->
 
+
+        <div class="relaxation">
+            <div class="container">
+                <h3 class="relaxation__title">Other actitvities</h3>
+                <div class="other-activities">
+                    <div class="leisure-box">
+                        <img src="img/activities-one.jpg" alt="relax-image">
+                        <span>The curious corner of chamarel</span>
+                        <button class="leisure-box__button">Book now</button>
+                    </div>
+                    <div class="leisure-box">
+                        <img src="img/activities-second.jpg" alt="relax-image">
+                        <span>Gymkhana club golf course</span>
+                        <button class="leisure-box__button">Book now</button>
+                    </div>
+                    <div class="leisure-box">
+                        <img src="img/activities-third.jpg" alt="relax-image">
+                        <span>Tamarind falls hiking trip - full day</span>
+                        <button class="leisure-box__button">Book now</button>
+                    </div>
+                    <div class="leisure-box">
+                        <img src="img/activities-fourth.jpg" alt="relax-image">
+                        <span>The blue marine discovery quest</span>
+                        <button class="leisure-box__button">Book now</button>
+                    </div>
+                </div><!-- other-activities -->
+            </div><!--  container-->
+        </div><!-- relaxation -->
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <img class="footer__logo" src="/img/logo-footer.svg" alt="logotipe-footer">
+                <nav class="navigation-footer">
+                    <div class="catigories">
+                        <h4 class="navigaton-footer__title">ALL CATEGORIES</h4>
+                        <ul class="list-footer">
+                            <li><a href="#">All Deals</a></li>
+                            <li><a href="#">Hotels</a></li>
+                            <li><a href="#">Activities</a></li>
+                            <li><a href="#">Spa Packages</a></li>
+                            <li><a href="#">Hotel Day Packages</a></li>
+                            <li><a href="#">Restaurants</a></li>
+                            <li><a href="#">Fitness</a></li>
+                            <li><a href="#">Rodrigues</a></li>
+                        </ul>
+                    </div><!-- /. all catigories -->
+                    <div class="additional">
+                        <h4 class="navigaton-footer__title">ADDITIONAL INFORMATION</h4>
+                        <ul class="list-footer">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a> </li>
+                            <li><a href="#">How does it work?</a></li>
+                            <li><a href="#">Frequently Asked Questions</a></li>
+                            <li><a href="#">Deals.mu loyalty program</a></li>
+                            <li><a href="#"> Promote your Business on BTP</a></li>
+                        </ul>
+                    </div><!-- /.additional info -->
+                    <div class="legalinfo">
+                        <h4 class="navigaton-footer__title">LEGAL INFORMATION</h4>
+                        <ul class="list-footer">
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Disclaimer</a></li>
+                            <li><a href="#">Cancellation policy</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                    </div><!-- /.legalinfo -->
+                </nav><!-- navigation-footer -->
+                <div class="social-network">
+                    <h4 class="navigaton-footer__title">Social Network</h4>
+                    <a href="#"><img class="social-icon" src="img/facebook-icon.svg" alt="facebook"></a>
+                    <a href="#"><img class="social-icon" src="img/youtube-icon.svg" alt="youtube"></a>
+                    <a href="#"><img class="social-icon" src="img/instagram-icon.svg" alt="instagram"></a>
+                </div><!-- /.social network-->
+            </div><!-- /footer-top -->
+            <div class="footer__contact">
+                <div class="contact-details">
+                    <h4 class="navigaton-footer__title">Contact Details</h4>
+                    <span class="subtitle-list">Feel free to contact us by phone, email or by our contact form</span>
+                    <ul class="list-footer">
+                        <li class="list-item"><img src="img/location-icon.svg" alt="">
+                            <p>9748 Blossom Hill Rd undefined Lansing, Idaho 68545
+                                United States</p>
+                        </li>
+                        <li class="list-item"><img src="img/phone-icon.svg" alt="">
+                            <div class="column-list-phone">
+                                <span>Tel (business hours) : 269 1500</span> <br>
+                                <span>Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am –
+                                    20:00 pm)</span> <br>
+                                <span> Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00
+                                    pm)</span>
+                            </div>
+
+                        </li>
+                        <li class="list-item"><img src="img/mail-icon.svg" alt="">
+                            <p>cherly.lawson@example.com</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-blank">
+                    <h4 class="navigaton-footer__title">Send us a message</h4>
+                    <form class="contact-form" action="\">
+                        <input class="send-contact-name" type="text" placeholder="Your Full Name*">
+                        <input class="send-contact-phone" type="tel" placeholder="Phone Number*">
+                        <textarea name="text" id="\" placeholder="Message"></textarea>
+                        <button type="submit">Send</button>
+                        <span>* Required Fields</span>
+                    </form>
+                </div>
+            </div><!-- /.footer__contact -->
+            <div class="footer__bottom">
+                <div class="wrapper-privacy">
+                    <div class="documentation">
+                        <a href="#">Disclaimer</a>
+                        <a href="#">Conditions of use</a>
+                        <a href="#">Cancellation policy</a>
+                    </div>
+                    <img class="brandbox" src="img/brandbox-footer.png" alt="brands">
+                </div> <!-- wrapper-privacy -->
+
+            </div><!-- /.footer__bottom -->
+        </div><!-- container -->
+    </footer><!-- footer -->
+
+
+
     <script src="main.js"></script>
 </body>
 

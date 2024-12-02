@@ -1,0 +1,85 @@
+.relaxation {
+    font-family: "Mulish";
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+.relaxation__title {
+    padding-bottom: 60px;
+
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.other-activities {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.leisure-box {
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    padding: 25px;
+    position: relative;
+    width: 255px;
+    height: 255px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to top, rgba($clr-dark-blue, 0.9) 20%, transparent);
+        z-index: 1;
+        pointer-events: none;
+        /* Чтобы не блокировало клики */
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    span {
+        position: relative;
+        z-index: 5;
+        padding-bottom: 18px;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    &__button {
+        position: relative;
+        z-index: 5;
+        width: 100px;
+        height: 30px;
+
+        background-color: $clr-pinky;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+
+        font: {
+            family: "Nunito";
+
+        }
+    }
+}

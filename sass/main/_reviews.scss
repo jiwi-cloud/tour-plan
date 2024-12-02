@@ -14,13 +14,14 @@
             z-index: 5;
             background-color: #fd010100;
             outline: none;
+            transition: transform 0.5s ease;
 
             &--left {
-                left: -40px;
+                left: -30px;
             }
 
             &--right {
-                right: -40px;
+                right: -30px;
             }
 
             &:hover {

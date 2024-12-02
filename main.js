@@ -57,3 +57,30 @@ document.addEventListener('scroll', function () {
     parallaxBg.style.transform = `translateY(${scrollPosition * 0.5}px)`; // Чем меньше коэффициент, тем медленнее движение
 });
 
+
+
+
+//Активность кнопки* без движения возвращается в scale(1)
+document.querySelectorAll('.reviews__arrow').forEach(arrow => {
+    let hoverTimeout;
+
+    arrow.addEventListener('mousemove', () => {
+        // Удаляем таймер, если мышь продолжает двигаться
+        clearTimeout(hoverTimeout);
+
+        // Увеличиваем масштаб
+        arrow.style.transform = 'translateY(-50%) scale(1.5)';
+
+        // Сбрасываем масштаб через 1 секунду без активности
+        hoverTimeout = setTimeout(() => {
+            arrow.style.transform = 'translateY(-50%) scale(1)';
+        }, 1000);
+    });
+
+    // Сбрасываем масштаб, если курсор уходит с кнопки
+    arrow.addEventListener('mouseleave', () => {
+        clearTimeout(hoverTimeout); // Убираем таймер
+        arrow.style.transform = 'translateY(-50%) scale(1)';
+    });
+});
+

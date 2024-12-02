@@ -90,17 +90,56 @@
             .hotel-overview__minimap {
                 width: 50%;
 
-                .minimap-image {
+                iframe {
                     width: 100%;
                 }
             }
         }
     }
 
-    /* Reviews */
+    // Mail-subscribe scroll
 
+    // Reviews 
 
+    //Relaxation 
+    .relaxation {
+        padding-top: 0px;
+    }
+
+    .relaxation__title {
+        padding-bottom: 30px;
+    }
+
+    .leisure-box {
+        height: 255px;
+        margin: 10px;
+        flex: 1 1 calc(50% - 40px);
+    }
+
+    //footer
+    .footer__top {
+        .legalinfo {
+            text-align: end;
+        }
+
+        .social-network {
+            padding: 0;
+        }
+    }
+
+    .footer__contact {
+        .contact-form {
+            input {
+                flex-basis: 100%;
+            }
+        }
+    }
+
+    .contact-details {
+        padding-right: 50px;
+    }
 }
+
 
 @media (max-width:992px) {
 
@@ -129,6 +168,13 @@
             .hotel-overview__minimap {
                 flex-basis: 50%;
             }
+        }
+    }
+
+    //footer 
+    .footer__top {
+        .footer__logo {
+            height: 130px;
         }
     }
 }
@@ -227,6 +273,113 @@
         }
 
     }
+
+    //footer 
+    .footer__top {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .footer__logo {
+        align-self: center;
+        grid-row: 1 / 2;
+    }
+
+    .navigation-footer {
+        display: grid;
+        grid-column: 1 / 5;
+        grid-row: 2 / 3;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: end;
+    }
+
+
+    .catigories {
+        margin-right: 25%;
+        grid-row: 2 / 3;
+    }
+
+    .additional {
+        grid-row: 2 / 3;
+    }
+
+    .legalinfo {
+        grid-row: 2 / 3;
+    }
+
+    .social-network {
+        justify-self: center;
+        grid-row: 1 / 2;
+        grid-column: 2 / 5;
+    }
+
+    //----------------------------------------------------contact-footer
+    .footer__contact {
+
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 350px 1fr;
+        justify-content: center;
+        padding-top: 40px;
+    }
+
+    .contact-details {
+        grid-column: 1 / 4;
+        padding-right: 0;
+
+        .navigaton-footer__title {
+            text-transform: uppercase;
+        }
+
+        .subtitle-list {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .list-footer {
+            list-style-type: none;
+            padding-bottom: 10px;
+            display: inline-block;
+            width: 100%;
+
+            .list-item {
+                display: flex;
+                padding: 10px 5px;
+                font-size: 14px;
+                font-weight: 100;
+
+                img {
+                    align-self: center;
+                    margin-right: 10px;
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+        }
+
+        .column-list-phone {
+            line-height: 1.8;
+
+        }
+    }
+
+    .contact-blank {
+        grid-column: 1 / 4;
+
+        .contact-form {
+
+            input {
+                flex-basis: 100%;
+            }
+        }
+    }
+
+    .wrapper-privacy {
+        display: flex;
+        justify-content: space-between;
+        grid-column: 1 / 4;
+    }
 }
 
 @media (max-width:600px) {
@@ -290,6 +443,156 @@
         width: 200px;
         font-size: 16px;
     }
+
+    //Relaxation 
+    .leisure-box {
+        flex: 1 1 100%;
+    }
+
+    //footer
+    .footer__top {
+        display: grid;
+        grid-template-rows: 1fr 100px;
+
+
+        .legalinfo {
+            text-align: start; // fix nesting for correct work 
+        }
+    }
+
+    .footer__logo {
+        grid-column: 1 / 5;
+        grid-row: 1 / 2;
+        justify-self: center;
+    }
+
+    .navigation-footer {
+        grid-column: 1 / 5;
+        grid-row: 3 / 4;
+    }
+
+    .navigaton-footer__title {
+        padding-bottom: 10px;
+    }
+
+
+    .catigories {
+        justify-self: start;
+        grid-column: 1 / 5;
+        grid-row: 1 / 2;
+        padding-bottom: 20px;
+    }
+
+    .additional {
+        justify-self: start;
+        grid-column: 1 / 5;
+        grid-row: 2 / 3;
+        padding-bottom: 20px;
+    }
+
+    .legalinfo {
+        justify-self: start;
+        grid-column: 1 / 5;
+        grid-row: 3 / 4;
+        padding-bottom: 20px;
+    }
+
+    .social-network {
+        padding-left: 35px;
+        align-self: center;
+        justify-self: center;
+        grid-column: 1 / 5;
+        grid-row: 2 / 3;
+
+        .navigaton-footer__title {
+            padding-bottom: 0px;
+            text-transform: uppercase;
+            display: inline;
+        }
+
+        a {
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            align-self: center;
+            transform: translateY(15%);
+        }
+
+        .social-icon {
+            margin-left: 5px;
+
+            &:hover {
+                background-color: $clr-pinky;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    //----------------------contact 
+    .footer__contact {
+        padding-top: 40px;
+    }
+
+    .contact-details {
+        grid-column: 1 / 5;
+    }
+
+    .contact-blank {
+        grid-column: 1 / 5;
+
+        .contact-form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            input {
+                flex-basis: 100%;
+
+
+            }
+
+            button {
+                height: 50px;
+                width: 150px;
+                border-radius: 5px;
+                font-size: 12px;
+                font-weight: 500;
+                color: #fff;
+                background-color: $clr-pinky;
+
+                &:active {
+                    background-color: darken($clr-pinky, 10%);
+                }
+            }
+
+            span {
+                font-size: 12px;
+                align-self: center;
+            }
+        }
+    }
+
+    //----------------------footer-bottom
+    .brandbox {
+        display: none;
+    }
+
+    .documentation {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .wrapper-privacy {
+        display: flex;
+        justify-content: center;
+        grid-column: 1 / 5;
+    }
+
+    .documentation {
+        a {
+            font-size: 10px;
+        }
+    }
 }
 
 
@@ -347,6 +650,8 @@
     .title-for-subbox {
         padding-bottom: 20px;
     }
+
+    //footer 
 }
 
 @media (max-width: 320px) {
